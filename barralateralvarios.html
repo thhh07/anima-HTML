@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--link da font awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--link do estilo css-->
+	<link rel="stylesheet" href="css/style.css">
+	<title>menu sidebar dashboard</title>
+</head>
+<body>
+	<div class="container">
+		<nav class="menu">
+			<ul>
+				<li class="lista-logo">
+					<a href="#">
+						<i class="fa fa-angellist"></i>
+						<span class="span-menu">Logo</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-feed"></i>
+						<span class="span-menu">Feed</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-commenting"></i>
+						<span class="span-menu">Comentários</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-search"></i>
+						<span class="span-menu">Busca</span>
+					</a>
+				</li>
+				<li class="li-empresa">
+				<a href="#">
+					<i class="fa fa-clock-o"></i>
+					<span class="span-menu">Novo</span>
+				</a>
+				</li>
+				<li class="lista">
+					<a href="#">
+						<i class="fa fa-bar-chart"></i>
+						<span class="span-menu">Negócios</span>
+					</a>
+				</li>
+				<li class="lista">
+					<a href="#">
+						<i class="fa fa-product-hunt"></i>
+						<span class="span-menu">Produtos</span>
+					</a>
+				</li>
+				<li class="lista">
+					<a href="#">
+						<i class="fa fa-scribd"></i>
+						<span class="span-menu">Serviços</span>
+					</a>
+				</li>
+				<li class="lista">
+					<a href="#">
+						<i class="fa fa-server"></i>
+						<span class="span-menu">Casos de Uso</span>
+					</a>
+				</li>
+				<li class="lista">
+					<a href="#">
+						<i class="fa fa-database"></i>
+						<span class="span-menu">Banco de Dados</span>
+					</a>
+				</li>
+				<li class="lista">
+					<a href="#">
+						<i class="fa fa-connectdevelop"></i>
+						<span class="span-menu">Desenvolvimento</span>
+					</a>
+				</li>
+				<li class="lista">
+					<a href="#">
+						<i class="fa fa-industry"></i>
+						<span class="span-menu">Indústria</span>
+					</a>
+				</li>
+				<li class="lista">
+					<a href="#">
+						<i class="fa fa-mail-forward"></i>
+						<span class="span-menu">Mídias Sociais</span>
+					</a>
+				</li>
+				<li class="li-contato">
+					<a href="#">
+						<i class="fa fa-user"></i>
+						<span class="span-menu">Login</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-envelope"></i>
+						<span class="span-menu">Contato</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-question-circle"></i>
+						<span class="span-menu">Help</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="home"></div>
+		<center>
+		<input type="number" placeholder="Digite seu número">
+		</center>
+	</div>
+    <style>
+       /* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	appearance: none;
+	font-family: 'Times New Roman', Times, serif;
+}
+body, html{
+	overflow-x: hidden;
+}
+.menu{
+	background-color: #131313;
+	position: fixed;
+	overflow: hidden;
+	height: 100vh;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 70px;
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	-webkit-transform: translateZ(0) scale(1,1);
+	transform: translateZ(0) scale(1,1);
+}
+.menu > ul{
+	margin: 5px 0;
+}
+.menu li{
+	position: relative;
+	display: block;
+	width: 250px;
+}
+.menu li > a{
+	position: relative;
+	width: 255px;
+	color: #8a8a8a;
+	display: table;
+	font-size: 16px;
+	text-decoration: none;
+	-webkit-transform: translateZ(0) scale(1,1);
+	transform: translateZ(0) scale(1,1);
+	-webkit-transition: all 0.15s linear;
+	transition: all 0.15s linear;
+}
+.menu .span-menu{
+	position: relative;
+	display: table-cell;
+	vertical-align: middle;
+	width: 180px;
+}
+.lista{
+	background-color: #131313;
+	text-transform: capitalize;
+}
+.lista-logo, .li-empresa, .li-contato{
+	background-color: #010101;
+	text-transform: capitalize;
+}
+.menu li:hover a, nav.menu li.active > a{
+	color: #fff;
+	background-color: #282828;
+}
+nav{
+	-webkit-user-select: none;
+	user-select: none;
+	box-shadow: 0 0 10px #282828;
+}
+.fa{
+	position: relative;
+	width: 60px;
+	height: 40px;
+	text-align: center;
+	top: 12px;
+}
+.menu:hover, nav.menu.expanded{
+	width: 250px;
+	overflow: hidden;
+}
+.home{
+	width: 100%;
+	height: 100vh;
+	background: rgba(46, 96, 116, 0.8) url(../imagem/img_1.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-blend-mode: darken;
+}
+
+    </style>
+</body>
+</html>
